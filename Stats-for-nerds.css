@@ -1,15 +1,25 @@
 .u-section-1 .u-sheet-1 {
-  min-height: 500px;
+  min-height: 114px;
 }
 
 .u-section-1 .u-text-1 {
   margin-bottom: 0;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .u-section-1 .u-text-2 {
-  margin-left: 0;
-  margin-right: auto;
-  margin-bottom: 60px;
+  margin: 20px auto 10px 0;
+}.u-section-2 .u-sheet-1 {
+  min-height: 240px;
+}
+
+.u-section-2 .u-text-1 {
+  margin-bottom: 0;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.u-section-2 .u-text-2 {
+  margin: 20px auto 10px 0;
 }
