@@ -1,0 +1,61 @@
+:root {
+    --current-theme: 0;
+    --primary-color: #404040;
+    --secondary-color: #656565;
+    --accent-color: #666699;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(var(--primary-color), var(--accent-color));
+    height: 15vh;
+    padding: 0 10vw;
+}
+
+.header-logo {
+    height: 11vh;
+    padding-top: 2vh;
+}
+
+.intro-section {
+    background-color: var(--primary-color);
+    height: 55vh;
+}
+
+.counter-section {
+    background-color: var(--secondary-color);
+    height: 30vh;
+
+}
+
+.problem-counters {
+    display: table;
+    margin: 0 auto;
+}
+
+.counter {
+    background-color: var(--accent-color);
+    height: 25vh;
+    width: 15vw;
+    margin: 0 4vw;
+    display: inline-block;
+}
+
+.theme-change-button {
+    color: #fff;
+    float: right;
+}
+
+.bw-img {
+    filter: invert(100%);
+}
+
+.theme-logo {
+    content: url("../images/sun.png");
+    height: 7vh;
+    padding-top: 4vh;
+}
