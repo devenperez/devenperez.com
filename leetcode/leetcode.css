@@ -50,6 +50,7 @@ header {
 .theme-change-button {
     color: #fff;
     float: right;
+    cursor: pointer;
 }
 
 .bw-img {
