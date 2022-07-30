@@ -79,3 +79,9 @@ header {
     height: 7vh;
     padding-top: 4vh;
 }
+
+.leetcode-logo {
+    position: relative;
+    height: 25vh;
+    top: 2vh;
+}
