@@ -1,6 +1,6 @@
 var themes = {
-    0: ["#404040", "#757575", "#8181C1", true],
-    1: ["#fffaf1", "#ecd9ba", "#666699", false]
+    0: ["#404040", "#757575", "#8181C1", "#ffffff", true],
+    1: ["#fffaf1", "#ecd9ba", "#666699", "#000000", false]
 };
 
 function theme_change() {
@@ -12,8 +12,9 @@ function theme_change() {
     document.documentElement.style.setProperty("--primary-color", themes[nextThemeIndex][0]);
     document.documentElement.style.setProperty("--secondary-color", themes[nextThemeIndex][1]);
     document.documentElement.style.setProperty("--accent-color", themes[nextThemeIndex][2]);
+    document.documentElement.style.setProperty("--text-color", themes[nextThemeIndex][3]);
 
     // Flip black and white images
     console.log(themes[nextThemeIndex][3] ? "filter: invert(100%);" : "")
-    document.getElementsByClassName("bw-img").style.setProperty("filter", themes[nextThemeIndex][3] ? "invert(100%)" : "none")
+    document.getElementsByClassName("bw-img").style.setProperty("filter", themes[nextThemeIndex][4] ? "invert(100%)" : "none")
 }
