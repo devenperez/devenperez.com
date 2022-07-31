@@ -73,7 +73,7 @@ header {
     cursor: pointer;
 }
 
-.bw-img {
+.inverted {
     filter: invert(100%);
 }
 
