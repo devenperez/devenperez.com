@@ -37,7 +37,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: ProductSans, sans-serif;
     color: var(--text-color);
 }
 
@@ -115,4 +115,46 @@ header {
     position: relative;
     height: 25vh;
     top: 2vh;
+}
+
+.solution-section {
+    height: 12vh;
+    padding: 2vh 3vw;
+}
+
+.odd-segment {
+    background-color: var(--primary-color);
+}
+
+.even-segment {
+    background-color: var(--secondary-color);
+}
+
+.solution-info {
+    margin: 0 2vw;
+    position: relative;
+    float: left;
+}
+
+.solution-info h1 {
+    display: inline;
+    margin: 1.5vw 0 0 2.5vw; 
+    font-size: 5vh;
+}
+
+.solution-info h3 {
+    display: inline;
+    margin: 1vh 4vw;
+    font-size: 3vh;    
+}
+
+.solution-button-panel {
+    position: relative;
+    float: right;
+}
+
+.solution-button-panel img {
+    float: right;
+    display: inline;
+    height: 10vh;
 }
