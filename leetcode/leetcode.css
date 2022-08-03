@@ -158,3 +158,16 @@ header {
     display: inline;
     height: 10vh;
 }
+
+.solution-intro-section {
+    background-image: linear-gradient(var(--secondary-color), var(--primary-color));
+    height: 25vh;
+    text-align: center;
+    padding: 2vh 15vw;
+}
+
+.solution-intro-box {
+    background-color: var(--accent-color);
+    border-radius: 3vw;
+    border: 3px solid var(--text-color);
+}
