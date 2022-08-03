@@ -66,3 +66,26 @@ header {
 .inverted {
     filter: invert(100%);
 }
+
+footer {
+    background: linear-gradient(var(--accent-color), var(--primary-color));
+    height: 15vh;
+    padding: 0 10vw;
+    text-align: center;
+}
+
+.footer-logo {
+    content: url(images/dp_logo.png);
+    height: 11vh;
+    padding-top: 2vh;
+}
+
+.social-link {
+    float: right;
+    height: 3vh;
+    padding-top: 6vh;
+}
+
+.social-link.github {
+    content: url(images/2111432.png);
+}
