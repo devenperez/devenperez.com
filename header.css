@@ -53,7 +53,11 @@ header {
     padding-top: 2vh;
 }
 
-.theme-logo {
+
+.theme-change-button {
+    color: var(--text-color);
+    float: right;
+    cursor: pointer;
     content: url(images/sun.png);
     height: 7vh;
     padding-top: 4vh;

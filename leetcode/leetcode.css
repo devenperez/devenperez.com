@@ -41,14 +41,6 @@
     font-size: 2vh;
 }
 
-.theme-change-button {
-    color: var(--text-color);
-    float: right;
-    cursor: pointer;
-}
-
-
-
 .leetcode-logo {
     position: relative;
     height: 25vh;
