@@ -84,8 +84,13 @@ footer {
     float: right;
     height: 3vh;
     padding-top: 6vh;
+    padding: 6vh 0 0 0.5vw;
 }
 
 .social-link.github {
     content: url(images/github-logo.png);
+}
+
+.social-link.blank {
+    content: url(images/blank-logo.png);
 }
