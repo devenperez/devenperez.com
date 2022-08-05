@@ -1,11 +1,11 @@
 var themes = {
     0: ["#404040", "#757575", "#8181C1", "#ffffff", true],
-    1: ["#fffaf1", "#ecd9ba", "#666699", "#000000", false]
+    1: ["#333333", "#643173", "#7d5ba6", "#ffffff", true]
 };
 
 function theme_change() {
-    var currentType = parseInt(getComputedStyle(document.documentElement).getPropertyValue("--current-theme"));
-    var nextThemeIndex = (currentType + 1) % Object.keys(themes).length;
+    var currentTheme = parseInt(getComputedStyle(document.documentElement).getPropertyValue("--current-theme"));
+    var nextThemeIndex = (currentTheme + 1) % Object.keys(themes).length;
 
     // Change theme colors
     document.documentElement.style.setProperty("--current-theme", nextThemeIndex);
@@ -15,8 +15,10 @@ function theme_change() {
     document.documentElement.style.setProperty("--text-color", themes[nextThemeIndex][3]);
 
     // Flip black and white images
-    let invertables = document.getElementsByClassName("invertable");
-    for (let i = 0; i < invertables.length; i++) {
-        invertables[i].classList.toggle("inverted");
+    if (themes[currentTheme][4] != themes[nextThemeIndex][4]) {
+        let invertables = document.getElementsByClassName("invertable");
+        for (let i = 0; i < invertables.length; i++) {
+            invertables[i].classList.toggle("inverted");
+        }
     }
 }
