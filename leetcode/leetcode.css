@@ -101,3 +101,9 @@
     border-radius: 3vw;
     border: 3px solid var(--text-color);
 }
+
+#solution-timestamp {
+    margin-right: 1vw;
+    font-size: 1vh;
+    font-style: italic;
+}

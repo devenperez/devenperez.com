@@ -22,17 +22,17 @@
         <div class="counter-section">
             <span class="problem-counters">
                 <div class="counter">
-                    <h1 class="counter-text">999</h1>
+                    <h1 id="easy-problem-count" class="counter-text">999</h1>
                     <p class="counter-text">EASY problems solved</p>
                 </div>
 
                 <div class="counter">
-                    <h1 class="counter-text">999</h1>
+                    <h1 id="medium-problem-count" class="counter-text">999</h1>
                     <p class="counter-text">MEDIUM problems solved</p>
                 </div>
 
                 <div class="counter">
-                    <h1 class="counter-text">999</h1>
+                    <h1 id="hard-problem-count" class="counter-text">999</h1>
                     <p class="counter-text">HARD problems solved</p>
                 </div>
             </span>
@@ -43,33 +43,39 @@
                 <h1>vvv -- View my solutions below -- vvv</h1>
                 <p>All solutions have their runtime and memory usage attached. Along with distinctions for outstanding perfomances.</p>
                 <p>Click on the side buttons for more info on the problem or the code used to solve the problem.</p>
+                <p id="solution-timestamp">Leetcode solutions gathered as of</p>
             </div>
         </div>
 
-        <!-- Section 1: Dark Theme -->
-        <div class="solution-section odd-segment">
-            <span class="solution-info">
-                <h1>1. Some problem name (Easy)</h1>
-                <br>
-                <h3>0.0 ms</h3>
-                <h3>0.0 MB</h3>
-            </span>
-            <span class="solution-button-panel">
-                <img src="images/code.png" class="invertable inverted"></h2>
-            </span>
-        </div>
-        
-        <!-- Section 2: Light Theme -->
-        <div class="solution-section even-segment">
-            <span class="solution-info">
-                <h1>2. Some other problem name (Hard)</h1>
-                <br>
-                <h3>0.0 ms</h3>
-                <h3>0.0 MB</h3>
-            </span>
-            <span class="solution-button-panel">
-                <img src="images/code.png" class="invertable inverted"></h2>
-            </span>
+        <div id="all-solutions">
+        <!--
+            ***Sample HTML for first two segments***
+            <!- Section 1: Dark Theme ->
+            <div class="solution-section odd-segment">
+                <span class="solution-info">
+                    <h1>1. Some problem name (Easy)</h1>
+                    <br>
+                    <h3>0.0 ms</h3>
+                    <h3>0.0 MB</h3>
+                </span>
+                <span class="solution-button-panel">
+                    <img src="images/code.png" class="invertable inverted"></h2>
+                </span>
+            </div>
+            
+            <!- Section 2: Light Theme ->
+            <div class="solution-section even-segment">
+                <span class="solution-info">
+                    <h1>2. Some other problem name (Hard)</h1>
+                    <br>
+                    <h3>0.0 ms</h3>
+                    <h3>0.0 MB</h3>
+                </span>
+                <span class="solution-button-panel">
+                    <img src="images/code.png" class="invertable inverted"></h2>
+                </span>
+            </div>
+        -->
         </div>
         <footer>
             <a href="../index.html" class="footer-logo invertable inverted"></a>
