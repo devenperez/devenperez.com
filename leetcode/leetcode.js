@@ -2,7 +2,7 @@ var problemJson;
 var problemsShown = 0;
 var problemsLoaded = 0;
 
-fetch('https://api-git.devenperez.com/data/sample.json')
+fetch('https://api-git.devenperez.com/data/sample.json') // 'https://api-git.devenperez.com/data/problems_solved.json'
 .then((response) => response.json())
 .then((data) =>  {
     problemJson = data;
@@ -14,8 +14,12 @@ fetch('https://api-git.devenperez.com/data/sample.json')
     printProblems(1);
 });
 
-function printProblems(numToLoad) {
-    for(var i = 0; i < numToLoad; i++) {
+function printProblems(numToLoad = -1) {
+    var maxLoadable = problemsLoaded - problemsShown
+
+    if(numToLoad == -1) numToLoad = maxLoadable
+
+    for(var i = 0; i < Math.min(numToLoad, maxLoadable); i++) {
         var prob = problemJson.solvedProblems.problems[problemsShown]
         problemsShown++;
         var themeType = (problemsShown % 2 == 0) ? "Light" : "Dark";
