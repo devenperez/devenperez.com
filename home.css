@@ -1,0 +1,53 @@
+.intro-section {
+    height: 60vh;
+    background-color: var(--primary-color);
+    padding: 5vh 15vw;
+}
+
+.intro-textbox {
+    float: right;
+    display: inline-block;
+}
+
+.intro-textbox h1 {
+    text-align: right;
+    font-size: 8vh;
+    margin-top: 10vh;
+    margin-bottom: 0;
+}
+
+.intro-textbox p {
+    float: right;
+    text-align: right;
+    font-size: 2vh;
+    width: 30vw;
+}
+
+.headshot-frame {
+    border: 3px solid var(--text-color);
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    height: 50vh;
+    width: 50vh;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.headshot {
+    height: 75vh;
+    margin-top: -5vh; 
+}
+
+.social-link.intro {
+    height: 7vh;
+    padding: 2vh 0 0 2vw;
+}
+
+.link-bar-section {
+    height: 15vh;
+    background-color: var(--secondary-color);
+}
+
+.social-link.leetcode {
+    content: url(images/leetcode-logo.png);
+}
