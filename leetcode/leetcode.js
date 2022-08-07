@@ -8,10 +8,9 @@ fetch('https://api-git.devenperez.com/data/sample.json') // 'https://api-git.dev
     problemJson = data;
     problemsLoaded = problemJson.solvedProblems.problems.length
     document.getElementById("solution-timestamp").innerText += ` ${new Date(data.timeGathered).toDateString}`
-    document.getElementById("easy-problem-count").innerText = problemJson.solvedProblems.solvedTotals.easy
-    document.getElementById("medium-problem-count").innerText = problemJson.solvedProblems.solvedTotals.medium
-    document.getElementById("hard-problem-count").innerText = problemJson.solvedProblems.solvedTotals.hard
-    printProblems(1);
+    changeTotal("easy", problemJson.solvedProblems.solvedTotals.easy)
+    changeTotal("medium", problemJson.solvedProblems.solvedTotals.medium)
+    changeTotal("hard", problemJson.solvedProblems.solvedTotals.hard)
 });
 
 function printProblems(numToLoad = -1) {
@@ -43,8 +42,12 @@ function printProblems(numToLoad = -1) {
 </div>
 */
 
+async function changeTotal(dif, amount) {
+    var delayTime = 1500 / amount;
+    var currentShowing = 0;
 
-
-/*
-<!-- Section 1: Dark Theme --><div class="solution-section odd-segment"><span class="solution-info"><h1>1. Some problem name (Easy)</h1><br><h3>0.0 ms</h3><h3>0.0 MB</h3></span><span class="solution-button-panel"><img src="images/code.png" class="invertable inverted"></h2></span></div>
-*/
+    while (currentShowing < amount) {
+        document.getElementById(`${dif}-problem-count`).innerText = ++currentShowing;
+        await new Promise(resolve => setTimeout(resolve, delayTime));
+    }
+}
