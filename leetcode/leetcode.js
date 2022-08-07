@@ -11,6 +11,7 @@ fetch('https://api-git.devenperez.com/data/sample.json') // 'https://api-git.dev
     changeTotal("easy", problemJson.solvedProblems.solvedTotals.easy)
     changeTotal("medium", problemJson.solvedProblems.solvedTotals.medium)
     changeTotal("hard", problemJson.solvedProblems.solvedTotals.hard)
+    printProblems(Math.min(10, problemsLoaded));
 });
 
 function printProblems(numToLoad = -1) {
