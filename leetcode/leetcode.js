@@ -7,7 +7,7 @@ fetch('https://api-git.devenperez.com/data/sample.json') // 'https://api-git.dev
 .then((data) =>  {
     problemJson = data;
     problemsLoaded = problemJson.solvedProblems.problems.length
-    document.getElementById("solution-timestamp").innerText += ` ${new Date(data.timeGathered).toDateString}`
+    document.getElementById("solution-timestamp").innerText += ` ${new Date(data.timeGathered).toDateString()}`
     changeTotal("easy", problemJson.solvedProblems.solvedTotals.easy)
     changeTotal("medium", problemJson.solvedProblems.solvedTotals.medium)
     changeTotal("hard", problemJson.solvedProblems.solvedTotals.hard)
