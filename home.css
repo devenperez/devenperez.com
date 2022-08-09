@@ -1,5 +1,5 @@
 .intro-section {
-    height: 60vh;
+    height: 55vh;
     background-color: var(--primary-color);
     padding: 5vh 15vw;
 }
@@ -43,11 +43,63 @@
     padding: 2vh 0 0 2vw;
 }
 
-.link-bar-section {
-    height: 15vh;
-    background-color: var(--secondary-color);
-}
-
 .social-link.leetcode {
     content: url(images/leetcode-logo.png);
+}
+
+.link-bar-section {
+    background-color: var(--secondary-color);
+    height: 20vh;
+}
+
+.link-bar {
+    display: table;
+    margin: 0 auto;
+}
+
+.info-blurb {
+    text-align: center;
+    position: relative;
+    background-color: var(--primary-color);
+    height: 25vh;
+    width: 15vw;
+    margin: -8vh 4vw;
+    display: inline-table;
+    border: 5px solid var(--secondary-color);
+    border-radius: 2vw;
+}
+
+.info-blurb p {
+    margin: 0 1vw;
+    font-size: 2vh;
+    font-style: italic;
+}
+
+.info-blurb h1 {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.blurb-img {
+    height: 7vh;
+    margin: 2vh;
+}
+
+.blurb-img.leetcode {
+    content: url(images/coding.png);
+}
+
+.blurb-img.resume {
+    content: url(images/resume.png);
+}
+
+.blurb-img.project {
+    content: url(images/project.png);
+}
+
+.blurb-img-bg {
+    background-color: var(--accent-color);
+    border: 2px solid var(--text-color);
+    margin: 0.5vh 5vw;
+    border-radius: 2vw;
 }
