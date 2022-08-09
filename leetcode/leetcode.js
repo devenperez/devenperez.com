@@ -2,7 +2,7 @@ var problemJson;
 var problemsShown = 0;
 var problemsLoaded = 0;
 
-fetch('https://api-git.devenperez.com/data/sample.json') // 'https://api-git.devenperez.com/data/problems_solved.json'
+fetch("https://api-git.devenperez.com/data/problems_solved.json")
 .then((response) => response.json())
 .then((data) =>  {
     problemJson = data;
