@@ -24,7 +24,7 @@ function printProblems(numToLoad = -1) {
         problemsShown++;
         var themeType = (problemsShown % 2 == 0) ? "Light" : "Dark";
         var oddOrEven = (problemsShown % 2 == 0) ? "even" : "odd";
-        document.getElementById("all-solutions").innerHTML += `<!-- Section ${problemsShown}: ${themeType} Theme --><div class="solution-section ${oddOrEven}-segment"><span class="solution-info"><h1>${prob.number}. ${prob.name} (${prob.difficulty})</h1><br><h3>${prob.scores.time}</h3><h3>${prob.scores.memory}</h3></span><span class="solution-button-panel"><img src="images/code.png" class="invertable inverted"></h2></span></div>`;
+        document.getElementById("all-solutions").innerHTML += `<!-- Section ${problemsShown}: ${themeType} Theme --><div class="solution-section ${oddOrEven}-segment"><span class="solution-info"><h1>${prob.number}. ${prob.name} (${prob.difficulty})</h1><br><h3>${prob.scores.time} ms</h3><h3>${prob.scores.memory} MB</h3></span><span class="solution-button-panel"><img src="images/code.png" class="invertable inverted"></h2></span></div>`;
     }
 }
 
