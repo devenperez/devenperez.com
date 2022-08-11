@@ -1,0 +1,18 @@
+@media screen and (max-width: 481px) {
+
+    header {
+        height: 10vh;
+        padding: 0 4vw;
+    }
+    
+    .header-logo {
+        height: 8vh;
+        padding-top: 1vh;
+    }
+
+    .theme-change-button {
+        height: 6vh;
+        padding-top: 2vh;
+    }
+
+}
