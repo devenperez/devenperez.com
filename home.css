@@ -1,7 +1,7 @@
 .intro-section {
     height: 55vh;
     background-color: var(--primary-color);
-    padding: 5vh 15vw;
+    padding: 5vh 18vw;
 }
 
 .intro-textbox {
@@ -14,6 +14,7 @@
     font-size: 8vh;
     margin-top: 10vh;
     margin-bottom: 0;
+    text-shadow: 0.5vh 0.5vh 2vh #202020;
 }
 
 .intro-textbox p {
@@ -31,6 +32,7 @@
     width: 50vh;
     overflow: hidden;
     display: inline-block;
+    box-shadow: -0.5vh 2vh 4vh #202020;
 }
 
 .headshot {
@@ -67,6 +69,7 @@
     display: inline-table;
     border: 5px solid var(--secondary-color);
     border-radius: 2vw;
+    box-shadow: 0 0.5vh 5vh var(--primary-color);
 }
 
 .info-blurb p {
