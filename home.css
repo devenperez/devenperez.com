@@ -102,7 +102,7 @@
 
 .blurb-img-bg {
     background-color: var(--accent-color);
-    border: 2px solid var(--text-color);
+    /* border: 2px solid var(--text-color); */
     margin: 0.5vh 5vw;
     border-radius: 2vw;
 }
