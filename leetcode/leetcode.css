@@ -48,7 +48,7 @@
 }
 
 .solution-section {
-    height: 12vh;
+    height: 10vh;
     padding: 2vh 3vw;
 }
 
@@ -67,9 +67,13 @@
 }
 
 .solution-info h1 {
-    display: inline;
-    margin: 1.5vw 0 0 2.5vw; 
+    display: inline-block;
+    margin: 0 0 0 2.5vw; 
     font-size: 5vh;
+    width: 70vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .solution-info h3 {
@@ -86,7 +90,9 @@
 .solution-button-panel img {
     float: right;
     display: inline;
-    height: 10vh;
+    height: 8vh;
+    padding-top: 1vh;
+    padding-left: 2vw;
 }
 
 .solution-intro-section {
