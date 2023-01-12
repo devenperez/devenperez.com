@@ -47,8 +47,20 @@
     top: 2vh;
 }
 
-.solution-section {
+.problem-header{
     height: 12vh;
+}
+
+.emgithub-container {
+    padding: 0 4vw;
+}
+
+.emgithub-file .code-area td.hljs-ln-line {
+    line-height: 24px !important;
+    font-size: 18px !important;
+}
+
+.solution-section {
     padding: 2vh 3vw;
 }
 

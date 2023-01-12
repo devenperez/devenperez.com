@@ -24,7 +24,32 @@ function printProblems(numToLoad = -1) {
         problemsShown++;
         var themeType = (problemsShown % 2 == 0) ? "Light" : "Dark";
         var oddOrEven = (problemsShown % 2 == 0) ? "even" : "odd";
-        document.getElementById("all-solutions").innerHTML += `<!-- Section ${problemsShown}: ${themeType} Theme --><div class="solution-section ${oddOrEven}-segment"><span class="solution-info"><h1>${prob.number}. ${prob.name} (${prob.difficulty})</h1><br><h3>${prob.scores.time} ms</h3><h3>${prob.scores.memory} MB</h3></span><span class="solution-button-panel"><img src="images/code.png" class="invertable inverted"></h2></span></div>`;
+        var solution_section = document.createElement("div")
+        solution_section.classList.add("solution-section")
+        solution_section.classList.add(`${oddOrEven}-segment`)
+        solution_section.innerHTML += `<!-- Section ${problemsShown}: ${themeType} Theme -->
+        <div class="problem-header">
+            <span class="solution-info">
+                <h1>${prob.number}. ${prob.name} (${prob.difficulty})</h1>
+                <br>
+                <h3>${prob.languagesSolved[0].time} ms</h3>
+                <h3>${prob.languagesSolved[0].memory} MB</h3>
+            </span>
+            <!--
+            <span class="solution-button-panel">
+                <img src="images/code.png" class="invertable inverted">
+            </span>
+            -->
+        </div>`;
+
+
+        var embed_tag = document.createElement("script");
+        var locationURL = prob.location.replaceAll("/","%2F")
+        embed_tag.setAttribute("src",`https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdevenperez%2Fleetcode%2Fblob%2Fmain%2F${locationURL}&style=dark&type=code&showBorder=on&showLineNumbers=on`);
+
+        solution_section.appendChild(embed_tag);
+
+        document.getElementById("all-solutions").appendChild(solution_section);
     }
 }
 
@@ -38,7 +63,7 @@ function printProblems(numToLoad = -1) {
         <h3>0.0 MB</h3>
     </span>
     <span class="solution-button-panel">
-        <img src="images/code.png" class="invertable inverted"></h2>
+        <img src="images/code.png" class="invertable inverted">
     </span>
 </div>
 */
