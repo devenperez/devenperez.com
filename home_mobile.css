@@ -1,0 +1,60 @@
+@media screen and (max-width: 481px) {
+
+    .intro-section {
+        height: 70vh;
+        padding: 5vh 10vw;
+    }
+
+    .headshot-frame {
+        height: 80vw;
+        width: 80vw;
+    }
+    
+    .headshot {
+        height: 135vw;
+        margin-top: -10vw;
+        margin-left: -3vw;
+    }
+
+    .intro-textbox {
+        float: left;
+        text-align: center;
+    }
+    
+    .intro-textbox h1 {
+        text-align: center;
+        font-size: 6vh;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .intro-textbox p {
+        float: left;
+        text-align: center;
+        font-size: 2vh;
+        width: 100%
+    }
+
+    .social-link.intro {
+        height: 7vh;
+        padding: 2vh 0 0 2vw;
+        float: left;
+    }
+
+    .link-bar-section {
+        height: 85vh;
+    }
+
+    .info-blurb {
+        text-align: center;
+        position: relative;
+        background-color: var(--primary-color);
+        height: 25vh;
+        width: 80vw;
+        margin: 1vh 10vw;
+        display: inline-table;
+        border: 5px solid var(--secondary-color);
+        border-radius: 2vw;
+    }
+
+}

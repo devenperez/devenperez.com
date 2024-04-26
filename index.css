@@ -1,0 +1,96 @@
+@font-face {
+    font-family: ProductSans;
+    src: url(fonts/Product\ Sans\ Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: ProductSans;
+    src: url(fonts/Product\ Sans\ Italic.ttf);
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: ProductSans;
+    src: url(fonts/Product\ Sans\ Bold.ttf);
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: ProductSans;
+    src: url(fonts/Product\ Sans\ Bold\ Italic.ttf);
+    font-style: italic;
+    font-weight: bold;
+}
+
+:root {
+    --current-theme: 0;
+    --primary-color: #404040;
+    --secondary-color: #656565;
+    --accent-color: #8181C1;
+    --text-color: #ffffff;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: ProductSans, sans-serif;
+    color: var(--text-color);
+}
+
+header {
+    background: linear-gradient(var(--primary-color), var(--accent-color));
+    height: 15vh;
+    padding: 0 10vw;
+}
+
+.header-logo {
+    content: url(images/dp_logo.png);
+    height: 11vh;
+    padding-top: 2vh;
+}
+
+
+.theme-change-button {
+    color: var(--text-color);
+    float: right;
+    cursor: pointer;
+    content: url(images/sun.png);
+    height: 7vh;
+    padding-top: 4vh;
+}
+
+.inverted {
+    filter: invert(100%);
+}
+
+footer {
+    background: linear-gradient(var(--accent-color), var(--primary-color));
+    height: 15vh;
+    padding: 0 10vw;
+    text-align: center;
+}
+
+.footer-logo {
+    content: url(images/dp_logo.png);
+    height: 11vh;
+    padding-top: 2vh;
+}
+
+.social-link {
+    float: right;
+    height: 3vh;
+    padding-top: 6vh;
+    padding: 6vh 0 0 0.5vw;
+}
+
+.social-link.github {
+    content: url(images/github-logo.png);
+}
+
+.social-link.blank {
+    content: url(images/blank-logo.png);
+}

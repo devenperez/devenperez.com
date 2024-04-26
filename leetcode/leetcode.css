@@ -1,0 +1,156 @@
+.intro-section {
+    background-color: var(--primary-color);
+    height: 55vh;
+    padding: 0 15vw;
+    text-align: center;
+}
+
+.counter-section {
+    background-color: var(--secondary-color);
+    height: 30vh;
+
+}
+
+.problem-counters {
+    display: table;
+    margin: 0 auto;
+}
+
+.counter {
+    position: relative;
+    background-color: var(--accent-color);
+    height: 25vh;
+    width: 15vw;
+    margin: -5vh 4vw;
+    display: inline-block;
+    border: 5px solid var(--secondary-color);
+    border-radius: 2vw;
+}
+
+.counter-text {
+    position: relative;
+    text-align: center;
+}
+
+.counter h1 {
+    margin: 3vh 0;
+    font-size: 10vh;
+}
+
+.counter p {
+    font-size: 2vh;
+}
+
+.leetcode-logo {
+    position: relative;
+    height: 25vh;
+    top: 2vh;
+}
+
+.problem-header{
+    height: 12vh;
+}
+
+.emgithub-container {
+    padding: 0 4vw;
+}
+
+.emgithub-file .code-area td.hljs-ln-line {
+    line-height: 24px !important;
+    font-size: 18px !important;
+}
+
+.solution-section {
+    padding: 2vh 3vw;
+    position: relative;
+    z-index: 1;
+}
+
+.odd-segment {
+    background-color: var(--primary-color);
+}
+
+.even-segment {
+    background-color: var(--secondary-color);
+}
+
+.solution-info {
+    margin: 0 2vw;
+    position: relative;
+    float: left;
+}
+
+.solution-info h1 {
+    display: inline;
+    margin: 1.5vw 0 0 2.5vw; 
+    font-size: 5vh;
+}
+
+.solution-info h3 {
+    display: inline;
+    margin: 1vh 4vw;
+    font-size: 3vh;    
+}
+
+.solution-button-panel {
+    position: relative;
+    float: right;
+}
+
+.solution-button-panel img {
+    float: right;
+    display: inline;
+    height: 10vh;
+}
+
+.solution-intro-section {
+    background-image: linear-gradient(var(--secondary-color), var(--primary-color));
+    height: 25vh;
+    text-align: center;
+    padding: 2vh 15vw;
+}
+
+.solution-intro-box {
+    background-color: var(--accent-color);
+    border-radius: 3vw;
+    border: 3px solid var(--text-color);
+}
+
+#solution-timestamp {
+    margin-right: 1vw;
+    font-size: 1vh;
+    font-style: italic;
+}
+
+.language-selector {
+    height: 15vh;
+    padding: 0 7vw;
+    background-color: var(--primary-color);
+    border-bottom: 0.5vh solid var(--text-color);
+}
+
+.lang-header {
+    display: inline-block;
+    height: 15vh;
+    width: 5vw;
+    padding: 2.5vh;
+    margin: 0;
+    border: 0.5vh solid var(--text-color);
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    background-color: var(--secondary-color);
+    position: relative;
+    z-index: 0;
+}
+
+.lang-header.active {
+    background-color: var(--accent-color);
+    width: 10vw;
+}
+
+.lang-header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5vw;
+}

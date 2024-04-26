@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../index.css">
+        <link rel="stylesheet" href="leetcode.css">
+        <script src="../theme-change.js"></script>
+        <script src="leetcode.js"></script>
+        <script src="selector.js"></script>
+
+        <title>Leetcode Solutions - devenperez.com</title>
+        <link rel="icon" href="../images/favicon.png">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html" class="header-logo invertable inverted"></a>
+            <div class="theme-change-button theme-logo invertable inverted" onClick="theme_change()"></div>
+        </header>
+        <div class="intro-section">
+            <img class="leetcode-logo invertable" src="images/leetcode-logo.png">
+            <h1>Leetcode Solutions</h1>
+            <p>Leetcode is a website that provides many programming questions to help with computational problem solving, which can help bolster one's ability in the workplace.</p>
+            <p>These are just some of my solutions to several problems</p>
+        </div>
+        <div class="counter-section">
+            <span class="problem-counters">
+                <div class="counter">
+                    <h1 id="easy-problem-count" class="counter-text">0</h1>
+                    <p class="counter-text">EASY problems solved</p>
+                </div>
+
+                <div class="counter">
+                    <h1 id="medium-problem-count" class="counter-text">0</h1>
+                    <p class="counter-text">MEDIUM problems solved</p>
+                </div>
+
+                <div class="counter">
+                    <h1 id="hard-problem-count" class="counter-text">0</h1>
+                    <p class="counter-text">HARD problems solved</p>
+                </div>
+            </span>
+        </div>
+
+        <div class="solution-intro-section">
+            <div class="solution-intro-box">
+                <h1>vvv -- View my solutions below -- vvv</h1>
+                <p>All solutions have their runtime and memory usage attached. Along with distinctions for outstanding perfomances.</p>
+                <p>Click on the side buttons for more info on the problem or the code used to solve the problem.</p>
+                <p id="solution-timestamp">Leetcode solutions gathered as of</p>
+            </div>
+        </div>
+
+        <div class="language-selector">
+            <div id="selector-0" class="lang-header active" onClick="setActive(0)">
+                <img src="images/python.png">
+            </div>
+            <div id="selector-1" class="lang-header" onClick="setActive(1)">
+                <img src="images/c.png">
+            </div>
+            <div id="selector-2" class="lang-header" onClick="setActive(2)">
+                <img src="images/sql.png">
+            </div>
+        </div>
+
+        <div id="all-solutions">
+        <!--
+            ***Sample HTML for first two segments***
+            <!- Section 1: Dark Theme ->
+            <div class="solution-section odd-segment">
+                <span class="solution-info">
+                    <h1>1. Some problem name (Easy)</h1>
+                    <br>
+                    <h3>0.0 ms</h3>
+                    <h3>0.0 MB</h3>
+                </span>
+                <span class="solution-button-panel">
+                    <img src="images/code.png" class="invertable inverted"></h2>
+                </span>
+            </div>
+            
+            <!- Section 2: Light Theme ->
+            <div class="solution-section even-segment">
+                <span class="solution-info">
+                    <h1>2. Some other problem name (Hard)</h1>
+                    <br>
+                    <h3>0.0 ms</h3>
+                    <h3>0.0 MB</h3>
+                </span>
+                <span class="solution-button-panel">
+                    <img src="images/code.png" class="invertable inverted"></h2>
+                </span>
+            </div>
+        -->
+        </div>
+        <footer>
+            <a href="../index.html" class="footer-logo invertable inverted"></a>
+            <a href="https://github.com/devenperez" class="social-link github invertable inverted"></a>
+            <a href="#" class="social-link blank invertable inverted"></a>
+            <a href="#" class="social-link blank invertable inverted"></a>
+        </footer>
+    </body>
+</html>

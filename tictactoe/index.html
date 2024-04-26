@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../index.css">
+        <link rel="stylesheet" href="../index_mobile.css">
+        <link rel="stylesheet" href="tictactoe.css">
+        <script src="../theme-change.js"></script>
+        <script src="tictactoe.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Tic Tac Toe - devenperez.com</title>
+        <link rel="icon" href="images/favicon.png">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="header-logo invertable inverted"></a>
+            <div class="theme-change-button theme-logo invertable inverted" onClick="theme_change()"></div>
+        </header>
+        
+        <div class="body-background">
+            <h1 class="turn-indicator">Player's turn</h1>
+            <div class="t3-container">
+                <table id="board">
+                    <tr>
+                        <td id="box0" onClick="clickBox(0)">&nbsp;</td>
+                        <td id="box1" onClick="clickBox(1)">&nbsp;</td>
+                        <td id="box2" onClick="clickBox(2)">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="box3" onClick="clickBox(3)">&nbsp;</td>
+                        <td id="box4" onClick="clickBox(4)">&nbsp;</td>
+                        <td id="box5" onClick="clickBox(5)">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="box6" onClick="clickBox(6)">&nbsp;</td>
+                        <td id="box7" onClick="clickBox(7)">&nbsp;</td>
+                        <td id="box8" onClick="clickBox(8)">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <footer>
+            <a href="#" class="footer-logo invertable inverted"></a>
+            <a href="https://github.com/devenperez" class="social-link github invertable inverted"></a>
+            <a href="#" class="social-link blank invertable inverted"></a>
+            <a href="#" class="social-link blank invertable inverted"></a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+.intro-section {
+    height: 55vh;
+    background-color: var(--primary-color);
+    padding: 5vh 18vw;
+}
+
+.intro-textbox {
+    float: right;
+    display: inline-block;
+}
+
+.intro-textbox h1 {
+    text-align: right;
+    font-size: 8vh;
+    margin-top: 10vh;
+    margin-bottom: 0;
+    text-shadow: 0.5vh 0.5vh 2vh #202020;
+}
+
+.intro-textbox p {
+    float: right;
+    text-align: right;
+    font-size: 2vh;
+    width: 30vw;
+}
+
+.headshot-frame {
+    border: 3px solid var(--text-color);
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    height: 50vh;
+    width: 50vh;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: -0.5vh 2vh 4vh #202020;
+}
+
+.headshot {
+    height: 75vh;
+    margin-top: -5vh; 
+}
+
+.social-link.intro {
+    height: 7vh;
+    padding: 2vh 0 0 2vw;
+}
+
+.social-link.leetcode {
+    content: url(images/leetcode-logo.png);
+}
+
+.link-bar-section {
+    background-color: var(--secondary-color);
+    height: 20vh;
+}
+
+.link-bar {
+    display: table;
+    margin: 0 auto;
+}
+
+.info-blurb {
+    text-align: center;
+    position: relative;
+    background-color: var(--primary-color);
+    height: 25vh;
+    width: 15vw;
+    margin: -8vh 4vw;
+    display: inline-table;
+    border: 5px solid var(--secondary-color);
+    border-radius: 2vw;
+    box-shadow: 0 0.5vh 5vh var(--primary-color);
+}
+
+.info-blurb p {
+    margin: 0 1vw;
+    font-size: 2vh;
+    font-style: italic;
+}
+
+.info-blurb h1 {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.blurb-img {
+    height: 7vh;
+    margin: 2vh;
+}
+
+.blurb-img.leetcode {
+    content: url(images/coding.png);
+}
+
+.blurb-img.resume {
+    content: url(images/resume.png);
+}
+
+.blurb-img.project {
+    content: url(images/project.png);
+}
+
+.blurb-img-bg {
+    background-color: var(--accent-color);
+    /* border: 2px solid var(--text-color); */
+    margin: 0.5vh 5vw;
+    border-radius: 2vw;
+}
